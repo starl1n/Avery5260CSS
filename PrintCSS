@@ -1,0 +1,48 @@
+
+    body,html, .box{
+        margin:0px;
+        padding:0px;
+    }
+body {
+    width: 8.5in;
+    margin: 0in .1775in;
+}
+
+    .labelAvery {
+        /* Avery 5260 labels -- CSS and HTML by MM at Boulder Information Services */
+        width: 2.925in; /* plus .7 inches from padding */
+        height: 1.09in; /* plus .125 inches from padding */
+       
+        float: left;
+        text-align: center;
+        overflow: hidden;
+        outline: 1px dotted; /* outline doesn't occupy space like border does */
+     
+    }
+
+    @media print{
+        .labelAvery {
+            outline: 0px none !important;/*Removed outline because we dont need that for avery :) */
+        }
+    }
+
+    .content{
+        margin:0px !important;
+        padding:0px !important;
+    }
+
+.spacing {
+    width: 0in;
+    height: 1in;
+    float: left;
+}
+
+.page-break {
+    clear: left;
+    display: block;
+    page-break-after: always;
+}
+
+.PageStartSpacing {
+    height: 0.28in;
+}
